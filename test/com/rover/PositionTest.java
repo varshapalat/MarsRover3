@@ -15,4 +15,14 @@ public class PositionTest {
 
         assertEquals(expectedPositon, position);
     }
+
+    @Test
+    public void roverCanMoveAlongYAxis() {
+        Position position = new Position(2, 3, "N");
+        Position expectedPositon = new Position(2, 4, "N");
+
+        position.moveAlongYAxis();
+
+        assertEquals(expectedPositon, position);
+    }
 }

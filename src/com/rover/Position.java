@@ -34,4 +34,8 @@ public class Position {
         result = 31 * result + (direction != null ? direction.hashCode() : 0);
         return result;
     }
+
+    public void moveAlongYAxis() {
+        y++;
+    }
 }
