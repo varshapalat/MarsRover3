@@ -50,5 +50,13 @@ public class ViewTest {
         assertEquals("LMLMLMLMM", view.acceptPlateauBoundaries());
     }
 
+    @Test
+    public void viewCanPrintCurrentStatus() {
+        View view = new View();
+        Position position = new Position(1, 3, "N");
 
+        view.printCurrentStatus(position);
+
+        assertEquals("1 3 N", outContent.toString());
+    }
 }

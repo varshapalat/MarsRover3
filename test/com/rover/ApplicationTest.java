@@ -28,4 +28,15 @@ public class ApplicationTest {
 
         verify(view).acceptRoverPosition();
     }
+
+    @Test
+    public void applicationCallsViewToAcceptCommands() {
+        View view = mock(View.class);
+        Application marsRoverApplication = new Application();
+        Rover rover = new Rover();
+
+        marsRoverApplication.start(view, rover);
+
+        verify(view).acceptCommands();
+    }
 }

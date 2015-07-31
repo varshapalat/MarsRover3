@@ -17,4 +17,8 @@ public class View {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
+
+    public void printCurrentStatus(Position position) {
+        System.out.print(position.x + " " + position.y + " " + position.direction);
+    }
 }
