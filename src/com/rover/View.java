@@ -12,4 +12,9 @@ public class View {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
+
+    public String acceptCommands() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
+    }
 }

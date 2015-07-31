@@ -42,11 +42,13 @@ public class ViewTest {
     }
 
     @Test
-    public void acceptRoverInitialPositionFromUser () {
+    public void acceptCommands () {
         View view = new View();
 
-        System.setIn(new ByteArrayInputStream("1 2 N".getBytes()));
+        System.setIn(new ByteArrayInputStream("LMLMLMLMM".getBytes()));
 
-        assertEquals("1 2 N", view.acceptRoverPosition());
+        assertEquals("LMLMLMLMM", view.acceptPlateauBoundaries());
     }
+
+
 }

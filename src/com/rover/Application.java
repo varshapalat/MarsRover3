@@ -10,5 +10,7 @@ public class Application {
         int y = Integer.parseInt(splitPositions[1]);
         String direction = splitPositions[2];
         Position position = new Position(x, y, String.valueOf(direction.charAt(0)));
+        view.acceptCommands();
+
     }
 }
