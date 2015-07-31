@@ -40,4 +40,13 @@ public class ViewTest {
 
         assertEquals("5 5", view.acceptPlateauBoundaries());
     }
+
+    @Test
+    public void acceptRoverInitialPositionFromUser () {
+        View view = new View();
+
+        System.setIn(new ByteArrayInputStream("1 2 N".getBytes()));
+
+        assertEquals("1 2 N", view.acceptRoverPosition());
+    }
 }

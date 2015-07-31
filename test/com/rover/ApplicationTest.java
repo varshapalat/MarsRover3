@@ -17,4 +17,15 @@ public class ApplicationTest {
 
         verify(view).acceptPlateauBoundaries();
     }
+
+    @Test
+    public void applicationCallsViewToAcceptRoverPosition() {
+        View view = mock(View.class);
+        Application marsRoverApplication = new Application();
+        Rover rover = new Rover();
+
+        marsRoverApplication.start(view, rover);
+
+        verify(view).acceptRoverPosition();
+    }
 }

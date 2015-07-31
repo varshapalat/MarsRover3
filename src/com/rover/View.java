@@ -7,4 +7,9 @@ public class View {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
+
+    public String acceptRoverPosition() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
+    }
 }
