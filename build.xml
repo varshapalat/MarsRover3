@@ -16,7 +16,6 @@
         <classpath location="lib/junit-4.11.jar" path="antBuild"/>
         <classpath location="lib/mockito-all-1.9.5.jar" path="antBuild"/>
         <test name="com.rover.ViewTest" haltonfailure="true" haltonerror="true"/>
-        <test name="com.rover.ApplicationTest" haltonfailure="true" haltonerror="true"/>
     </junit>
 </target>
 

@@ -38,4 +38,12 @@ public class Position {
     public void moveAlongYAxis() {
         y++;
     }
+
+    public void moveAlongXAxisInOppositeDirection() {
+        x--;
+    }
+
+    public void moveAlongYAxisInOppositeDirection() {
+        y--;
+    }
 }

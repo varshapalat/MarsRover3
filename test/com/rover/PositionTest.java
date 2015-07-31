@@ -25,4 +25,24 @@ public class PositionTest {
 
         assertEquals(expectedPositon, position);
     }
+
+    @Test
+    public void roverCanMoveAlongXAxisInOppositeDirection() {
+        Position position = new Position(2, 3, "N");
+        Position expectedPositon = new Position(1, 3, "N");
+
+        position.moveAlongXAxisInOppositeDirection();
+
+        assertEquals(expectedPositon, position);
+    }
+
+    @Test
+    public void roverCanMoveAlongYAxisInOppositeDirection() {
+        Position position = new Position(2, 3, "N");
+        Position expectedPositon = new Position(2, 2, "N");
+
+        position.moveAlongYAxisInOppositeDirection();
+
+        assertEquals(expectedPositon, position);
+    }
 }
